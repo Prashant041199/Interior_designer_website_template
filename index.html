@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Welcome | Sparkle and Stone</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- <script src='main.js'></script> -->
+</head>
+
+<body>
+    <div class="background-image">
+        <!-- logo and nav bar -->
+        <div class="logo-nav-header">
+            <div class="logo">
+                <h2>Sparkle and Stone</h2>
+            </div>
+            <div class="nav-bar">
+                <ul class="navbartoggleul" id="navbartoggleul">
+                    <li class="toggle-button"><a href="#" onclick="navbartoggle()">&#9776;</a></li>
+                    <li class="menuToHide"><a href="#">Home</a></li>
+                    <li class="menuToHide"><a href="#">About</a></li>
+                    <li class="menuToHide"><a href="#">Pricing</a></li>
+                    <li class="menuToHide"><a href="#">Contact us</a></li>
+
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- middle text -->
+        <div class="center-items">
+            <h1>DESIGN YOUR HOUSE</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit, sed do eiusmod tempor
+                <br>incididunt ut labore et dolore magna aliqua.
+            </p>
+            <br>
+            <br>
+            <div class="center-buttons">
+                <div class="btn-one">
+                    <button class="btn">Get Quotation</button>
+                </div>
+                <div class="btn-one">
+                    <button class="btn">Any Queries ?</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var navbarToggle = document.getElementById("navbartoggleul");
+
+        function navbartoggle() {
+            if (navbarToggle.className === 'navbartoggleul') {
+                navbarToggle.className += " responsive";
+            } else {
+                navbarToggle.className = "navbartoggleul";
+            }
+        }
+    </script>
+</body>
+
+
+</html>
