@@ -18,6 +18,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transition: 2s;
 }
 
 /* nav bar */
@@ -76,6 +77,9 @@ body{
     font-family: 'Satisfy', cursive;
     font-size: 3rem;
     color: white;
+}
+.logo a{
+    text-decoration: none;
 }
 
 .toggle-button{
@@ -139,7 +143,7 @@ body{
 /* modals */
 
 .form-Modal{
-    height: 40vh;
+   
     background-color: white;
     width: 40%;
     display: none;
@@ -149,7 +153,7 @@ body{
     transform: translate(-50%, -50%);
     border-radius: 7px;
     text-align: left;
-    transition: 2s;
+    
     
 }
 
@@ -183,6 +187,9 @@ body{
     border-radius: 7px;
     border: none;
     background-color: rgb(237, 237, 237);
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+    color:rgb(147, 120, 82) ;
 }
 
 .form-input-textbox{
@@ -192,8 +199,21 @@ body{
     border-radius: 7px;
     border: none;
     background-color: rgb(237, 237, 237);
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+    color:rgb(194, 157, 105) ;
 }
 
+.btn-black-text{
+    color: rgb(194, 157, 105);
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+   
+}
+
+.btn-black-text:hover{
+    color: white;
+}
 
 /* responsive */
 @media screen and (max-width: 1180px) {
