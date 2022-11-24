@@ -59,12 +59,36 @@
                     <button class="btn">Get Quotation</button>
                 </div>
                 <div class="btn-one">
-                    <button class="btn">Any Queries ?</button>
+                    <button class="btn" onclick="document.getElementById('form-Modal').style.display='block'">Any Queries ?</button>
                 </div>
             </div>
-        </div>
 
+
+
+        </div>
+        <div class="form-Modal" id="form-Modal">
+            <div class="input-form">
+                <div class="cross-wrapper">
+                    <button class="cross-icon" onclick="document.getElementById('form-Modal').style.display='none'">&#10799;</button>
+                </div>
+                <form>
+
+                    <!-- <label for="#email">Your Email Id:</label> -->
+                    <input type="email" name="your email" id="email" class="form-input-type" placeholder="Your Email">
+                    <br>
+                    <br>
+                    <!-- <label for="#email">Email subject:</label> -->
+                    <input type="text" name="subject" id="subject" class="form-input-type" placeholder="Subject">
+                    <br>
+                    <br>
+                    <!-- <label for="#email">Your Query:</label> -->
+                    <textarea name="Text1" placeholder="Your Query" class="form-input-textbox"></textarea>
+                </form>
+            </div>
+        </div>
     </div>
+
+
 
     <script>
         var navbarToggle = document.getElementById("navbartoggleul");
